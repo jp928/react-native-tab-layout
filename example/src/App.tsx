@@ -6,7 +6,7 @@ import { TabLayoutView } from 'react-native-tab-layout';
 export default function App() {
   return (
     <View style={styles.container}>
-      <TabLayoutViewManager color="#32a852" style={styles.box} />
+      <TabLayoutView color="#32a852" style={styles.box} />
     </View>
   );
 }
