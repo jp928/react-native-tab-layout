@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* TabLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* TabLayout.m */; };
-		F4FF95D7245B92E800C19C63 /*  TabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  TabLayout.swift */; };
-
+		448EC0DE27546D2700A97FA9 /* +UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EC0DD27546D2700A97FA9 /* +UIViewController.swift */; };
+		448EC0E027546E9A00A97FA9 /* RootTabManController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EC0DF27546E9A00A97FA9 /* RootTabManController.swift */; };
+		F4FF95D7245B92E800C19C63 /* TabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* TabLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +26,11 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libTabLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTabLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
+		448EC0DD27546D2700A97FA9 /* +UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+UIViewController.swift"; sourceTree = "<group>"; };
+		448EC0DF27546E9A00A97FA9 /* RootTabManController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabManController.swift; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* TabLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabLayout.m; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* TabLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabLayout-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4FF95D6245B92E800C19C63 /* TabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabLayout.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +55,11 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
+				448EC0DF27546E9A00A97FA9 /* RootTabManController.swift */,
+				448EC0DD27546D2700A97FA9 /* +UIViewController.swift */,
 				F4FF95D6245B92E800C19C63 /* TabLayout.swift */,
 				B3E7B5891CC2AC0600A0062D /* TabLayout.m */,
 				F4FF95D5245B92E700C19C63 /* TabLayout-Bridging-Header.h */,
-
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,10 +121,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
+				448EC0DE27546D2700A97FA9 /* +UIViewController.swift in Sources */,
 				F4FF95D7245B92E800C19C63 /* TabLayout.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* TabLayout.m in Sources */,
-
+				448EC0E027546E9A00A97FA9 /* RootTabManController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,11 +236,9 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = TabLayout;
 				SKIP_INSTALL = YES;
-
 				SWIFT_OBJC_BRIDGING_HEADER = "TabLayout-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Debug;
 		};
@@ -259,10 +255,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = TabLayout;
 				SKIP_INSTALL = YES;
-
 				SWIFT_OBJC_BRIDGING_HEADER = "TabLayout-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Release;
 		};
