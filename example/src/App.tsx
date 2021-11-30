@@ -1,22 +1,34 @@
 import * as React from 'react';
 
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import { TabLayoutView } from 'react-native-tab-layout';
 
 export default function App() {
+  // const [titles, setTitles] = React.useState<string[]>([]);
+
+  // React.useEffect(() => {
+  //   setTimeout(() => {
+  //     setTitles(['Category1', 'Category2', 'Category3']);
+  //   }, 500);
+  // }, []);
+
   return (
     <View style={styles.container}>
-      <TabLayoutView style={styles.box}>
-        <View key={1} style={styles.page1} />
-
+      <TabLayoutView
+        style={styles.box}
+        titles={['Category1', 'Category2', 'Category3']}
+      >
+        <ScrollView
+          key={1}
+          style={styles.page1}
+          contentContainerStyle={styles.scrollView}
+          scrollEnabled
+          horizontal
+        >
+          <View style={styles.scrollView} />
+        </ScrollView>
         <View key={2} style={styles.page2} />
         <View key={3} style={styles.page2} />
-        <View key={4} style={styles.page2} />
-        <View key={5} style={styles.page2} />
-        <View key={6} style={styles.page2} />
-        <View key={7} style={styles.page2} />
-        <View key={8} style={styles.page2} />
-        <View key={9} style={styles.page2} />
       </TabLayoutView>
     </View>
   );
@@ -30,8 +42,8 @@ const styles = StyleSheet.create({
   },
   page1: {
     ...StyleSheet.absoluteFillObject,
-    // flex: 1,
-    backgroundColor: 'blue',
+    flex: 1,
+    backgroundColor: 'yellow',
   },
   page2: {
     ...StyleSheet.absoluteFillObject,
@@ -43,5 +55,10 @@ const styles = StyleSheet.create({
     height: 600,
     // marginVertical: 20,
     backgroundColor: 'red',
+  },
+  scrollView: {
+    flex: 0,
+    width: 2000,
+    backgroundColor: 'purple',
   },
 });

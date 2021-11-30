@@ -13,6 +13,7 @@ const LINKING_ERROR =
 
 type TabLayoutProps = {
   style: ViewStyle;
+  title: string[];
 };
 
 const ComponentName = 'TabLayoutView';

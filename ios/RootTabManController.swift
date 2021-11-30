@@ -15,16 +15,17 @@ class RootTabManController: TabmanViewController, PageboyViewControllerDataSourc
   public var viewControllers: [UIViewController] = []
   
   
+  public var titles: NSArray = []
+  
+  
   // MARK: Lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     dataSource = self
-    //    isScrollEnabled = false
     
-    //    addBar(TinderBar.make(), dataSource: self, at: .top)
-    
+//    self.isScrollEnabled = false;
     let bar = TMBar.ButtonBar()
     bar.layout.transitionStyle = .snap
     addBar(bar, dataSource: self, at: .top)
@@ -47,8 +48,13 @@ class RootTabManController: TabmanViewController, PageboyViewControllerDataSourc
   // MARK: TMBarDataSource
   
   func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
-      let title = "Page \(index)"
+    var title = String(index)
+    if (index > titles.count - 1) {
       return TMBarItem(title: title)
+    }
+    
+    title = titles[index] as! String
+    return TMBarItem(title: title)
   }
   
 }

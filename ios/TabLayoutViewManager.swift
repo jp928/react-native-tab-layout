@@ -1,10 +1,11 @@
 import Tabman
 import Pageboy
 
+
 @objc(TabLayoutViewManager)
 class TabLayoutViewManager: RCTViewManager {
   @objc override static func requiresMainQueueSetup() -> Bool {
-    return true
+    return false
   }
   
   override func view() -> (TabLayoutView) {
@@ -15,9 +16,14 @@ class TabLayoutViewManager: RCTViewManager {
 class TabLayoutView : UIView {
   private var tabViewController = RootTabManController()
   
+  @objc var titles: NSArray! {
+    didSet {
+      self.tabViewController.titles = titles
+    }
+  }
+  
   @objc override func layoutSubviews() {
     super.layoutSubviews()
-    
     embed()
     
   }
@@ -31,8 +37,6 @@ class TabLayoutView : UIView {
   
   
   func embed() {
-//    tabViewController.view.frame = self.bounds;
-    
     addSubview(tabViewController.view)
     tabViewController.view.frame = bounds
   }
