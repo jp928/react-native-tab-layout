@@ -14,6 +14,7 @@ const LINKING_ERROR =
 type TabLayoutProps = {
   style: ViewStyle;
   titles: string[];
+  children: React.ReactNode[];
 };
 
 const ComponentName = 'TabLayoutView';
