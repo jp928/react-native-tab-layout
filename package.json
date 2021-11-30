@@ -1,6 +1,6 @@
 {
-  "name": "react-native-tab-layout",
-  "version": "0.1.0",
+  "name": "@jp928/react-native-tab-layout",
+  "version": "0.1.1",
   "description": "A react native library to link native TabLayout",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
