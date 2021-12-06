@@ -2,6 +2,15 @@
 
 A react native library to link native TabLayout
 
+
+## Motivation
+
+  ### iOS
+    The native link to [TabMan](https://github.com/uias/Tabman)
+
+  ### Android
+    TBC
+
 ## Installation
 
 ```sh
